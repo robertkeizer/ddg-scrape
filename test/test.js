@@ -1,23 +1,23 @@
 var assert = require( "assert" );
 
-describe( "Duck Duck Go Scrape", function( ){
+describe( "Search Scrape", function( ){
 	
 	it( "Is a function", function( ){
-		var ddgs = require( "../lib/index.js" );
-		assert.equal( "function", typeof( ddgs ) );
+		var searchScrape = require( "../lib/index.js" );
+		assert.equal( "function", typeof( searchScrape ) );
 	} );
 
 	it( "Returns an instance", function( ){
-		var ddgs = require( "../lib/index.js" );
-		var _ddgs = new ddgs( );
-		assert.ok( _ddgs instanceof ddgs );
+		var searchScrape = require( "../lib/index.js" );
+		var _searchScrape = new searchScrape( );
+		assert.ok( _searchScrape instanceof searchScrape );
 	} );
 
 	describe( "Instance", function( ){
 		var _instance;
 		before( function( ){
-			var ddgs = require( "../lib/index.js" );
-			_instance = new ddgs( );
+			var searchScrape = require( "../lib/index.js" );
+			_instance = new searchScrape( );
 		} );
 
 		it( "Has Search function", function( ){
@@ -31,12 +31,6 @@ describe( "Duck Duck Go Scrape", function( ){
 		} );
 
 		it( "Returns results", function( cb ){
-			_instance.Search( "Walmart", function( err, results ){
-				return cb( err, results );
-			} );
-		} );
-
-		it( "Returns another set of results if queried", function( cb ){
 			_instance.Search( "Walmart", function( err, results ){
 				return cb( err, results );
 			} );
