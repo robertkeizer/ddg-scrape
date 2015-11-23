@@ -36,4 +36,21 @@ describe( "Search Scrape", function( ){
 			} );
 		} );
 	} );
+
+	describe( "Google", function( ){
+		var _instance;
+		before( function( ){
+			var searchScrape = require( "../lib/index.js" );
+			_instance = new searchScrape( );
+		} );
+
+		it( "Returns results", function( cb ){
+			_instance._searchGoogle( "Walmart", function( err, result ){
+				if( err ){ return cb( err ); }
+				console.log( "I have results of ");
+				console.log( result );
+				return cb( null );
+			} );
+		} );
+	} );
 } );
