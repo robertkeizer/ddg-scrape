@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/robertkeizer/search-scrape#readme",
   "dependencies": {
+    "async": "^1.5.0",
     "casperjs": "^1.1.0-beta3",
     "spooky": "^0.2.5"
   },
