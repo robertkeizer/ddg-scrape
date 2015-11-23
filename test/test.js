@@ -37,7 +37,7 @@ describe( "Duck Duck Go Scrape", function( ){
 		} );
 
 		it( "Returns another set of results if queried", function( cb ){
-			_instance.Search( "Google", function( err, results ){
+			_instance.Search( "Walmart", function( err, results ){
 				return cb( err, results );
 			} );
 		} );
