@@ -1,4 +1,4 @@
-![Travis CI](https://travis-ci.org/robertkeizer/ddg-scrape.svg?branch=master)
+[![Travis CI](https://travis-ci.org/robertkeizer/ddg-scrape.svg?branch=master)](https://travis-ci.org/robertkeizer/ddg-scrape)
 
 # Duck Duck Go Scraping
 
