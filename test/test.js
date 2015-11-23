@@ -35,5 +35,11 @@ describe( "Duck Duck Go Scrape", function( ){
 				return cb( err, results );
 			} );
 		} );
+
+		it( "Returns another set of results if queried", function( cb ){
+			_instance.Search( "Google", function( err, results ){
+				return cb( err, results );
+			} );
+		} );
 	} );
 } );
