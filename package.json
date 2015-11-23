@@ -1,7 +1,7 @@
 {
-  "name": "ddg-scrape",
+  "name": "search-scrape",
   "version": "0.0.3",
-  "description": "Duck Duck Go Scraper",
+  "description": "Search Scraper",
   "main": "lib/index.js",
   "scripts": {
     "jshint": "jshint lib/*.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robertkeizer/ddg-scrape.git"
+    "url": "git+https://github.com/robertkeizer/search-scrape.git"
   },
   "keywords": [
     "duck",
@@ -21,9 +21,9 @@
   "author": "Robert Keizer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/robertkeizer/ddg-scrape/issues"
+    "url": "https://github.com/robertkeizer/search-scrape/issues"
   },
-  "homepage": "https://github.com/robertkeizer/ddg-scrape#readme",
+  "homepage": "https://github.com/robertkeizer/search-scrape#readme",
   "dependencies": {
     "casperjs": "^1.1.0-beta3",
     "spooky": "^0.2.5"

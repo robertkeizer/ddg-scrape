@@ -1,6 +1,6 @@
-[![Travis CI](https://travis-ci.org/robertkeizer/ddg-scrape.svg?branch=master)](https://travis-ci.org/robertkeizer/ddg-scrape)
+[![Travis CI](https://travis-ci.org/robertkeizer/search-scrape.svg?branch=master)](https://travis-ci.org/robertkeizer/search-scrape)
 
-# Duck Duck Go Scraping
+# Search Scraping
 
 Don't be a dick. 
 
@@ -8,11 +8,11 @@ Don't be a dick.
 ## Overview
 
 ```
-var DuckDuckGoScraper = require( "ddg-scape" );
+var Scraper = require( "search-scape" );
 
-var myScraper = new DuckDuckGoScraper( );
+var myScraper = new Scraper( );
 
-myScraper.Search( "Duck Duck Go Scraping", function( err, results ){
+myScraper.Search( "Scraping a webpage", function( err, results ){
 	if( err ){
 		return console.log( err );
 	}
