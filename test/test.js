@@ -35,5 +35,17 @@ describe( "Search Scrape", function( ){
 				return cb( err, results );
 			} );
 		} );
+
+		it( "Allows for a port to be specified", function( cb ){
+			// ideally at this point we should do a netstat or try and make sure we
+			// can connect to that port now ( tcp localhost ).
+
+			// For testing purposes we can just make sure to specify one.
+			var searchScrape = require( "../lib/index.js" );
+			_instance = new searchScrape( { port: 1339 } );
+			_instance.Search( "Walmart", function( err, results ){
+				return cb( err, results );
+			} );
+		} );
 	} );
 } );
