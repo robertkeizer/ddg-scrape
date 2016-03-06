@@ -1,6 +1,6 @@
 {
   "name": "search-scrape",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Search Scraper",
   "main": "lib/index.js",
   "scripts": {
