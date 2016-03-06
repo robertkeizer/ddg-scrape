@@ -36,6 +36,14 @@ describe( "Search Scrape", function( ){
 			} );
 		} );
 
+		it( "Returns image results", function( cb ){
+			var searchScrape	= require( "../lib/index.js" );
+			var _instance		= new searchScrape( { port: 8081 } );
+			_instance.Search( "Walmart Logo", { images: true }, function( err, results ){
+				return cb( null );
+			} );
+		} );
+
 		it( "Allows for a port to be specified", function( cb ){
 			// ideally at this point we should do a netstat or try and make sure we
 			// can connect to that port now ( tcp localhost ).
