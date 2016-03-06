@@ -30,20 +30,21 @@ describe( "Search Scrape", function( ){
 			} );
 		} );
 
-		it.skip( "Returns results", function( cb ){
+		it( "Returns results", function( cb ){
 			_instance.Search( "Walmart", function( err, results ){
 				return cb( err, results );
 			} );
 		} );
 
 		it( "Returns image results", function( cb ){
+			var searchScrape	= require( "../lib/index.js" );
+			var _instance		= new searchScrape( { port: 8081 } );
 			_instance.Search( "Walmart Logo", { images: true }, function( err, results ){
-				console.log( results );
 				return cb( null );
 			} );
 		} );
 
-		it.skip( "Allows for a port to be specified", function( cb ){
+		it( "Allows for a port to be specified", function( cb ){
 			// ideally at this point we should do a netstat or try and make sure we
 			// can connect to that port now ( tcp localhost ).
 
