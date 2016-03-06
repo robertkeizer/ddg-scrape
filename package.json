@@ -6,7 +6,7 @@
   "scripts": {
     "jshint": "jshint lib/*.js",
     "test": "npm run jshint && npm run test-node",
-    "test-node": "istanbul test ./node_modules/mocha/bin/_mocha test/*.js -- -t 120000",
+    "test-node": "istanbul test ./node_modules/mocha/bin/_mocha test/*.js -- -t 30000",
     "coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
   },
   "repository": {
